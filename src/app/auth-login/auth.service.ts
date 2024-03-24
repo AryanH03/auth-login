@@ -19,5 +19,16 @@ export class AuthService {
     // with credentials true will send all your credentials like cookies to server
     return this.http.get(APP_CONSTANT.BACKEND_URL+"student",{withCredentials:true});
   }
+  sendMail(data:any):Observable<any>{
+    // with credentials true will send all your credentials like cookies to server
+    return this.http.post(APP_CONSTANT.BACKEND_URL+"sendMail",data);
+  }
+  verifyToken(fpToken:string):Observable<any>{
+    return this.http.post(APP_CONSTANT.BACKEND_URL+"validateResetToken",{fpToken});
+  }
+  changePassword(password:string,fpToken:string):Observable<any>{
+    return this.http.post(APP_CONSTANT.BACKEND_URL+"changePassword",{password,fpToken});
+  }
+  
 
 }

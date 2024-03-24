@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResetPwdComponent } from './reset-pwd/reset-pwd.component';
 
 
 
@@ -12,7 +14,9 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     RegistarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ForgotPasswordComponent,
+    ResetPwdComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,8 @@ import { HomeComponent } from './home/home.component';
   exports:[
     RegistarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ForgotPasswordComponent
   ]
 })
 export class AuthLoginModule { }

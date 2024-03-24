@@ -9,13 +9,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http'
 import { SharedModule } from './shared/shared.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ForgetPawdComponent } from './forget-pawd/forget-pawd.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    ForgetPawdComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

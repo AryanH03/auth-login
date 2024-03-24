@@ -7,7 +7,8 @@ import { ContactUsComponent } from './shared/contact-us/contact-us.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminSService } from './auth-login/admin-s.service';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { ForgetPawdComponent } from './forget-pawd/forget-pawd.component';
+import { ForgotPasswordComponent } from './auth-login/forgot-password/forgot-password.component';
+import { ResetPwdComponent } from './auth-login/reset-pwd/reset-pwd.component';
 
 const routes: Routes = [
   {
@@ -33,7 +34,11 @@ const routes: Routes = [
   },
   {
     path:'forgot-password',
-    component:ForgetPawdComponent
+    component:ForgotPasswordComponent
+  },
+  {
+    path:'reset/:token',
+    component:ResetPwdComponent
   }
   // {
   //   path:'navbar',
